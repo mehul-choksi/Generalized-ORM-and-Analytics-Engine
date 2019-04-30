@@ -1,10 +1,10 @@
 public class Runner {
 
     public static void main(String args[]){
-        String PATH = "/home/ash/workspace/result-data/";
-        String pdfFile = "BE 2015PAT_EXTC.pdf";
-        String readIndexes = "be_extc_2015";
-        String subjectDescriptor = "be_extc_2015_desc";
+        String PATH = "/{your_path}";
+        String pdfFile = "{result_pdf}";
+        String readIndexes = "{pdf_index_file}";
+        String subjectDescriptor = "{pdf_descriptor_file}";
 
         GeneralizedFileReader fileReader = new GeneralizedFileReader(PATH,pdfFile,readIndexes);
         fileReader.init();
